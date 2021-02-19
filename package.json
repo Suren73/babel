@@ -1,22 +1,31 @@
 {
-  "name": "babel",
-  "version": "1.0.0",
-  "description": "Browser based game",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Suren73/babel.git"
-  },
-  "keywords": [
-    "game"
-  ],
-  "author": "Andrei Surkov",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Suren73/babel/issues"
-  },
-  "homepage": "https://github.com/Suren73/babel#readme"
+	"name": "babel",
+	"version": "1.0.0",
+	"description": "Browser based game",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "babel src -d dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Suren73/babel.git"
+	},
+	"keywords": [
+		"game"
+	],
+	"author": "Andrei Surkov",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Suren73/babel/issues"
+	},
+	"homepage": "https://github.com/Suren73/babel#readme",
+	"devDependencies": {
+		"@babel/cli": "^7.12.17",
+		"@babel/core": "^7.12.17",
+		"@babel/preset-env": "^7.12.17"
+	},
+	"dependencies": {
+		"core-js": "^3.9.0"
+	}
 }
